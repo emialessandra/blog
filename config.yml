@@ -1,4 +1,4 @@
 baseURL: https://blog.emiux.studio/
 languageCode: en-us
 title: Emiux Blog
-theme: "PaperMod"
+theme: hugo-PaperMod
