@@ -1,22 +1,58 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Editorial Site</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Emiux Blog - Aprende sobre experiencia de usuario</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="icon"
         href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏖</text></svg>">
+    <link rel="stylesheet" href="styles/nav.css">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/index.css">
 </head>
-
 <body>
-    <div class="container">
+    <header>
+        <nav>
+          <a href="https://emiux.studio"><img src="editorial-strapi-app/public/uploads/emiux.svg" alt="Emiux"></a>
+          <div id="menuToggle">
+            <!--
+            A fake / hidden checkbox is used as click reciever,
+            so you can use the :checked selector on it.
+            -->
+            <input type="checkbox" />
+            
+            <!--
+            Some spans to act as a hamburger.
+            
+            They are acting like a real hamburger,
+            not that McDonalds stuff.
+            -->
+            <span></span>
+            <span></span>
+            <span></span>
+            
+            <!--
+            Too bad the menu has to be inside of the button
+            but hey, it's pure CSS magic.
+            -->
+            <ul id="menu">
+              <li><a href="https://emiux.studio" >Sobre mí</a></li>
+              <li><a href="in-progress.html">Recursos</a></li>
+              <li><a href="#" class="active">Blog</a></li>
+              <li><a href="in-progress.html">Contáctame</a></li>
+            </ul>
+          </div>
+          
+        </nav>
+      </header>
+      <div class="container">
         <div class="site-title">
-            <span class="first">Editorial</span><span class="second">Site</span>
+            <span class="first">Mi blog</span>
         </div>
-        <div class="site-description">Vacation Advice and Tips</div>
+        <div class="site-description">Descubre cómo es trabajar en Experiencia de usuario y con equipos de tecnología.</div>
         <div id="article-list" class="card-cont"></div>
-    </div>
+       </div>
 </body>
 
 <footer>

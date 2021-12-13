@@ -15,7 +15,8 @@
     "title": {
       "type": "string",
       "required": true,
-      "unique": true
+      "unique": true,
+      "maxLength": 80
     },
     "coverImage": {
       "model": "file",
@@ -29,7 +30,8 @@
     },
     "description": {
       "type": "text",
-      "required": true
+      "required": true,
+      "maxLength": 160
     },
     "content": {
       "type": "richtext",
